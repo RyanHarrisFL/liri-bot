@@ -57,7 +57,12 @@ function spotifyThisSong() {
   spotify
   .search({ type: 'track', query: artists })
   .then(function(response) {
-    console.log(response);
+    console.log(JSON.stringify(response.tracks.items[0].artists[0].name));
+    console.log(JSON.stringify(response.tracks.items[0].name));
+    console.log(JSON.stringify(response.tracks.items[0].album.name));
+    console.log(JSON.stringify(response.tracks.items[0].preview_url));
+    
+    //console.log(response.tracks);
   })
   .catch(function(err) {
     console.log(err);
