@@ -64,5 +64,3 @@ function spotifyThisSong() {
   });
 
 }
-
-spotifyThisSong();
