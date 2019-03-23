@@ -2,31 +2,40 @@ require("dotenv").config();
 var axios = require("axios");
 var fs = require("fs");
 var moment = require('moment');
+var Spotify = require('node-spotify-api');
 
 var keys = require("./keys.js");
-var spotify = new Spotify(keys.spotify);
+//
 
 var requestType = process.argv[2];
 var nodeArgs = process.argv;
 
 var artists = "";
 
+
 switch (requestType) {
   case "concert-this":
+    loopNames();
     bandsInTown();
+    break;
+  case "spotify-this-song":
+    loopNames();
+    spotifyThisSong();
     break;
 }
 
-//Bands In Town Function
-function bandsInTown() {
-  for (var i = 3; i < nodeArgs.length; i++) {
-    if (i > 3 && i < nodeArgs.length) {
-      artists = artists + "+" + nodeArgs[i];
-    } else {
-      artists += nodeArgs[i];
-    }
+function loopNames() {
+for (var i = 3; i < nodeArgs.length; i++) {
+  if (i > 3 && i < nodeArgs.length) {
+    artists = artists + "+" + nodeArgs[i];
+  } else {
+    artists += nodeArgs[i];
   }
+}
+}
 
+//Bands In Town Function that retrieves data object
+function bandsInTown() {
   var queryUrl =
     "https://rest.bandsintown.com/artists/" +
     artists +
@@ -41,9 +50,19 @@ function bandsInTown() {
   });
 }
 
-
+//Spotify function that retrieves data object
 function spotifyThisSong() {
+  var spotify = new Spotify(keys.spotify);
 
-
+  spotify
+  .search({ type: 'track', query: artists })
+  .then(function(response) {
+    console.log(response);
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
 
 }
+
+spotifyThisSong();
