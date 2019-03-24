@@ -1,20 +1,20 @@
 require("dotenv").config();
+
+//Keys to access packages 
 var axios = require("axios");
 var fs = require("fs");
 var moment = require("moment");
 var Spotify = require("node-spotify-api");
-
 var keys = require("./keys.js");
 
+// Setting variables store value of key strokes 
 var requestType = process.argv[2];
-
 var nodeArgs = process.argv;
 
 var artists = "";
 var arr;
 
 arr = artists.length;
-console.log(arr);
 
 console.log(artists);
 
@@ -69,15 +69,15 @@ function spotifyThisSong() {
       .then(function(response) {
         console.log(
           JSON.stringify(
-            "Artist(s): " + response.tracks.items[0].artists[0].name
+            "Artist(s): " + response.tracks.items[9].artists[0].name
           )
         );
-        console.log(JSON.stringify("Song: " + response.tracks.items[0].name));
+        console.log(JSON.stringify("Song: " + response.tracks.items[9].name));
         console.log(
-          JSON.stringify("Album: " + response.tracks.items[0].album.name)
+          JSON.stringify("Album: " + response.tracks.items[9].album.name)
         );
         console.log(
-          JSON.stringify("Preview: " + response.tracks.items[0].preview_url)
+          JSON.stringify("Preview: " + response.tracks.items[9].preview_url)
         );
       })
       .catch(function(err) {
