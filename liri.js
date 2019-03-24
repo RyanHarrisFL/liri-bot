@@ -11,6 +11,7 @@ var requestType = process.argv[2];
 var nodeArgs = process.argv;
 
 var artists = "";
+var arr = 0;
 
 
 switch (requestType) {
@@ -33,6 +34,9 @@ for (var i = 3; i < nodeArgs.length; i++) {
   }
 }
 }
+
+arr = artists.length;
+console.log(arr);
 
 //Bands In Town Function that retrieves data object
 function bandsInTown() {
@@ -57,15 +61,14 @@ function spotifyThisSong() {
   spotify
   .search({ type: 'track', query: artists })
   .then(function(response) {
-    console.log(JSON.stringify(response.tracks.items[0].artists[0].name));
-    console.log(JSON.stringify(response.tracks.items[0].name));
-    console.log(JSON.stringify(response.tracks.items[0].album.name));
-    console.log(JSON.stringify(response.tracks.items[0].preview_url));
-    
-    //console.log(response.tracks);
+    console.log(JSON.stringify("Artist(s): " + response.tracks.items[0].artists[0].name));
+    console.log(JSON.stringify("Song: " + response.tracks.items[0].name));
+    console.log(JSON.stringify("Album: " + response.tracks.items[0].album.name));
+    console.log(JSON.stringify("Preview: " + response.tracks.items[0].preview_url));
   })
   .catch(function(err) {
     console.log(err);
+    
   });
 
 }
