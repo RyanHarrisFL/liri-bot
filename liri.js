@@ -27,6 +27,9 @@ switch (requestType) {
     loopNames();
     spotifyThisSong();
     break;
+  case "movie-this":
+    loopNames();
+    movieThis();
 }
 
 function loopNames() {
@@ -106,4 +109,11 @@ function spotifyThisSong() {
         console.log(err);
       });
   }
+}
+
+//Movie function that retrieves data object and parses data based on response.
+function movieThis() {
+  
+  //var queryUrl = ""
+
 }
