@@ -70,18 +70,10 @@ function spotifyThisSong() {
       .search({ type: "track", query: "The Sign" })
 
       .then(function(response) {
-        console.log(
-          JSON.stringify(
-            "Artist(s): " + response.tracks.items[9].artists[0].name
-          )
-        );
-        console.log(JSON.stringify("Song: " + response.tracks.items[9].name));
-        console.log(
-          JSON.stringify("Album: " + response.tracks.items[9].album.name)
-        );
-        console.log(
-          JSON.stringify("Preview: " + response.tracks.items[9].preview_url)
-        );
+        console.log("Artist(s): " + response.tracks.items[9].artists[0].name);
+        console.log("Song: " + response.tracks.items[9].name);
+        console.log("Album: " + response.tracks.items[9].album.name);
+        console.log("Preview: " + response.tracks.items[9].preview_url);
       })
       .catch(function(err) {
         console.log(err);
@@ -92,18 +84,10 @@ function spotifyThisSong() {
       .search({ type: "track", query: artists })
 
       .then(function(response) {
-        console.log(
-          JSON.stringify(
-            "Artist(s): " + response.tracks.items[0].artists[0].name
-          )
-        );
-        console.log(JSON.stringify("Song: " + response.tracks.items[0].name));
-        console.log(
-          JSON.stringify("Album: " + response.tracks.items[0].album.name)
-        );
-        console.log(
-          JSON.stringify("Preview: " + response.tracks.items[0].preview_url)
-        );
+        console.log("Artist(s): " + response.tracks.items[0].artists[0].name);
+        console.log("Song: " + response.tracks.items[0].name);
+        console.log("Album: " + response.tracks.items[0].album.name);
+        console.log("Preview: " + response.tracks.items[0].preview_url);
       })
       .catch(function(err) {
         console.log(err);
@@ -120,13 +104,12 @@ function movieThis() {
 
     console.log("Movie Title: " + response.data.Title);
     console.log("Year: " + response.data.Year);
-    console.log("IMBD Rating: " + response.data.Ratings[4]);
-    console.log("Rotten Tomatoes Rating: " + response.data.Ratings[2]);
+    console.log("IMBD Rating: " + response.data.Ratings[0].Value);
+    console.log("Rotten Tomatoes Rating: " + response.data.Ratings[0].Value);
     console.log("Country: " + response.data.Country);
     console.log("Language: " + response.data.Language);
     console.log("Plot: " + response.data.Plot);
     console.log("Actors: " + response.data.Actors);
-    //console.log(JSON.stringify(response.data));
 
   });
 
