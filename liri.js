@@ -62,15 +62,18 @@ function spotifyThisSong() {
   .search({ type: 'track', query: artists })
   .then(function(response) {
 
+    If (arr.length === 0) {
+      artists = "The Sign";
+      console.log(JSON.stringify("Artist(s): " + response.tracks.items[9].artists[0].name));
+      console.log(JSON.stringify("Song: " + response.tracks.items[9].name));
+      console.log(JSON.stringify("Album: " + response.tracks.items[9].album.name));
+      console.log(JSON.stringify("Preview: " + response.tracks.items[9].preview_url));
+    } else {
     console.log(JSON.stringify("Artist(s): " + response.tracks.items[0].artists[0].name));
     console.log(JSON.stringify("Song: " + response.tracks.items[0].name));
     console.log(JSON.stringify("Album: " + response.tracks.items[0].album.name));
     console.log(JSON.stringify("Preview: " + response.tracks.items[0].preview_url));
-
-    console.log(JSON.stringify("Artist(s): " + response.tracks.items[9].artists[0].name));
-    console.log(JSON.stringify("Song: " + response.tracks.items[9].name));
-    console.log(JSON.stringify("Album: " + response.tracks.items[9].album.name));
-    console.log(JSON.stringify("Preview: " + response.tracks.items[9].preview_url));
+    }
   })
   .catch(function(err) {
     console.log(err);
