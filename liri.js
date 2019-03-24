@@ -113,7 +113,13 @@ function spotifyThisSong() {
 
 //Movie function that retrieves data object and parses data based on response.
 function movieThis() {
-  
-  //var queryUrl = ""
+
+  var queryUrl = "http://www.omdbapi.com/?t=" + artists + "&y=&plot=short&apikey=trilogy";
+
+  axios.get(queryUrl).then(function(response){
+
+    console.log(JSON.stringify("Year" + response.data.Year));
+
+  });
 
 }
