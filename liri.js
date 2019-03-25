@@ -30,6 +30,9 @@ switch (requestType) {
   case "movie-this":
     loopNames();
     movieThis();
+  case "do-what-it-says":
+    loopNames();
+    doWhatItSays();
 }
 
 function loopNames() {
@@ -98,7 +101,12 @@ function spotifyThisSong() {
 //Movie function that retrieves data object and parses data based on response.
 function movieThis() {
 
-  var queryUrl = "http://www.omdbapi.com/?t=" + artists + "&y=&plot=short&apikey=trilogy";
+  //This If statement defaults to Mr. Nodbody if no movie is selected.
+  if (artists.length === 0) {
+    var queryUrl = "http://www.omdbapi.com/?t=" + "Mr. Nobody." + "&y=&plot=short&apikey=trilogy";
+  } else {
+    var queryUrl = "http://www.omdbapi.com/?t=" + artists + "&y=&plot=short&apikey=trilogy";
+  }
 
   axios.get(queryUrl).then(function(response){
 
@@ -112,5 +120,11 @@ function movieThis() {
     console.log("Actors: " + response.data.Actors);
 
   });
+}
+
+
+function doWhatItSays () {
+
+  console.log("This function is working properly!");
 
 }
