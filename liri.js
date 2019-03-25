@@ -124,7 +124,18 @@ function movieThis() {
 
 
 function doWhatItSays () {
+  
+  fs.readFile("random.txt", "utf8", function(error, data){
 
-  console.log("This function is working properly!");
+    if (error) {
+      return console.log(error);
+    }
+
+    console.log(data);
+    var dataArr = data.split();
+    console.log(dataArr)
+
+  })
+  
 
 }
