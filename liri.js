@@ -31,6 +31,7 @@ switch (requestType) {
   case "movie-this":
     loopNames();
     movieThis();
+    break;
   case "do-what-it-says":
     loopNames();
     doWhatItSays();
@@ -134,11 +135,11 @@ function doWhatItSays () {
     if (error) {
       return console.log(error);
     }
-
     console.log(data);
     var dataArr = data.split(",");
     requestType = dataArr[0];
-    console.log(requestType);
+    artists = dataArr[1];
+    switchCase();
   })
   
 
