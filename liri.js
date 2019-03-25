@@ -118,7 +118,7 @@ function movieThis() {
     console.log("Movie Title: " + response.data.Title);
     console.log("Year: " + response.data.Year);
     console.log("IMBD Rating: " + response.data.Ratings[0].Value);
-    console.log("Rotten Tomatoes Rating: " + response.data.Ratings[0].Value);
+    console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
     console.log("Country: " + response.data.Country);
     console.log("Language: " + response.data.Language);
     console.log("Plot: " + response.data.Plot);
