@@ -136,11 +136,9 @@ function doWhatItSays () {
     }
 
     console.log(data);
-    var dataArr = data.split();
-    console.log(dataArr);
-    var test1 = dataArr[1];
-    console.log(test1);
-
+    var dataArr = data.split(",");
+    requestType = dataArr[0];
+    console.log(requestType);
   })
   
 
