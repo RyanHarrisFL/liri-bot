@@ -18,6 +18,7 @@ arr = artists.length;
 
 console.log(artists);
 
+function switchCase() {
 switch (requestType) {
   case "concert-this":
     loopNames();
@@ -33,7 +34,10 @@ switch (requestType) {
   case "do-what-it-says":
     loopNames();
     doWhatItSays();
+    break;
 }
+}
+switchCase();
 
 function loopNames() {
   for (var i = 3; i < nodeArgs.length; i++) {
@@ -133,7 +137,9 @@ function doWhatItSays () {
 
     console.log(data);
     var dataArr = data.split();
-    console.log(dataArr)
+    console.log(dataArr);
+    var test1 = dataArr[1];
+    console.log(test1);
 
   })
   
