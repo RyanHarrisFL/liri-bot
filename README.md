@@ -2,7 +2,7 @@
 
 **Contact:** ryanharrisfl@gmail.com
 
-**Technologies Used:** 
+**Technologies Used** 
 * node.js
 * Javascript
 * API queries
@@ -57,4 +57,10 @@
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/do-what-it-says-movie.gif)
 
 
-## Commands In Action 
+## Do It Yourself
+
+Follow the instructions below if you would like to run the application in your terminal. 
+
+1. Clone down the respoitory to a place on your local machine
+2. Open root folder in your code editor
+3. In your terminal type "npm install" to install all npm packages.
