@@ -135,7 +135,6 @@ function doWhatItSays () {
     if (error) {
       return console.log(error);
     }
-    console.log(data);
     var dataArr = data.split(",");
     requestType = dataArr[0];
     artists = dataArr[1];
