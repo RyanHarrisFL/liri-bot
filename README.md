@@ -1,5 +1,13 @@
 # Liri Bot Application 
 
+**Contact:** ryanharrisfl@gmail.com
+
+**Technologies Used:** 
+* node.js
+* Javascript
+* API queries
+* NPM Packages (axios, dotenv, spotify, moment)
+
 **Purpose of Project:** This project is getting us comfortable utilizing npm packages for Node.js. The packages used in this project include the Axios package, Spotify, Bands In Town and OMDB NPM packages and APIs. 
 
 **What it Does:** Using the below commands in the terminal the application will either (1) retreive upcoming concert information for your favorite band, (2) search for artist album information for a particular song, (3) find information about a particular movie or (4) do one of the 3 previous commands based on what is entered into the random.txt file. 
@@ -49,4 +57,4 @@
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/do-what-it-says-movie.gif)
 
 
-
+## Commands In Action 
