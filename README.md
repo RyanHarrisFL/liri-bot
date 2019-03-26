@@ -14,4 +14,5 @@
 
 ### Bands In Town 
 1. node liri.js concert-this <artist/band name here>
-![GitHub Logo] (/assets/concert-this.gif)
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/concert-this.gif)
