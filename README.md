@@ -12,11 +12,13 @@
 
 ## Commands In Action 
 
-### Bands In Town 
+### Bands In Town
 
 1. node liri.js concert-this <artist/band name here>
 
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/concert-this.gif)
+
+### Spotify
 
 2. node liri.js spotify-this-song <song name here>
 
@@ -26,6 +28,8 @@
 
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/spotify-no-choice-the-sign-default.gif)
 
+### OMDB Movie Database
+
 4. node liri.js movie-this <movie name here>
 
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/movie-this-fellowship.gif)
@@ -33,6 +37,8 @@
 5. node liri.js movie-this (WITHOUT MOVIE SELECTION)
 
 ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/movie-this-default-mr-nobody.gif)
+
+### Do What It Says
 
 6. node liri.js do-what-it-says (with Spotify selection in Random.txt)
 
