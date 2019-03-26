@@ -74,7 +74,7 @@ Follow the instructions below if you would like to run the application in your t
 
    * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).
 
-5. Next, in the root folder create a file named `.env`in the roo, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+5. Next, in the root folder create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
 ```js
 # Spotify API keys
