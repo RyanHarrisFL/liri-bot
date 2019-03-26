@@ -61,8 +61,8 @@
 
 Follow the instructions below if you would like to run the application in your terminal. 
 
-1. Clone down the respoitory to a place on your local machine
-2. Open root folder in your code editor
+1. Clone down the respoitory to a place on your local machine.
+2. Open root folder in your code editor.
 3. In your terminal type "npm install" to install all npm packages.
 4. The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
 
