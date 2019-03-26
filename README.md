@@ -64,3 +64,30 @@ Follow the instructions below if you would like to run the application in your t
 1. Clone down the respoitory to a place on your local machine
 2. Open root folder in your code editor
 3. In your terminal type "npm install" to install all npm packages.
+4. The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
+
+   * Step One: Visit <https://developer.spotify.com/my-applications/#!/>
+
+   * Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
+
+   * Step Three: Once logged in, navigate to <https://developer.spotify.com/my-applications/#!/applications/create> to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
+
+   * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).
+
+5. Next, in the root folder create a file named `.env`in the roo, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+
+```js
+# Spotify API keys
+
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+
+```
+6. Use the following commands to retrieve your requested data. Have fun!
+
+* node liri.js concert-this <artist/band name here>
+* node liri.js spotify-this-song <song name here> (If no song is entered a default selection with be provided)
+* node liri.js movie-this <movie name here> (If no movie is entered a default selection with be provided)
+* node liri.js do-what-it-says
+
+
