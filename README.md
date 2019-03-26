@@ -7,12 +7,40 @@
 **Commands for Terminal**
 * node liri.js concert-this <artist/band name here>
 * node liri.js spotify-this-song <song name here> (If no song is entered a default selection with be provided)
-* node liri.js movie-this '<movie name here> (If no movie is entered a default selection with be provided)
+* node liri.js movie-this <movie name here> (If no movie is entered a default selection with be provided)
 * node liri.js do-what-it-says
 
 ## Commands In Action 
 
 ### Bands In Town 
+
 1. node liri.js concert-this <artist/band name here>
-![GitHub Logo](/images/logo.png)
+
 Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/concert-this.gif)
+
+2. node liri.js spotify-this-song <song name here>
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/spotify-purple-rain.gif)
+
+3. node liri.js spotify-this-song (WITHOUT SONG SELECTION)
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/spotify-no-choice-the-sign-default.gif)
+
+4. node liri.js movie-this <movie name here>
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/movie-this-fellowship.gif)
+
+5. node liri.js movie-this (WITHOUT MOVIE SELECTION)
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/movie-this-default-mr-nobody.gif)
+
+6. node liri.js do-what-it-says (with Spotify selection in Random.txt)
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/do-what-it-says-spotify.gif)
+
+7. node liri.js do-what-it-says (with Movie selection in Random.txt)
+
+Format: ![Alt Text](https://github.com/RyanHarrisFL/liri-node-app/blob/master/assets/do-what-it-says-movie.gif)
+
+
+
